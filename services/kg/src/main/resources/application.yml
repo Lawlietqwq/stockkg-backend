@@ -1,0 +1,20 @@
+#neo4j
+server:
+    port: 3717
+
+spring:
+    redis:
+        host: 121.89.234.19
+        port: 6397
+        database: 0
+        timeout: 10000
+        expire: 60000
+    data:
+        neo4j:
+            uri: bolt://csubigdata.com:7687
+            username: neo4j
+            password: csubigdata
+
+constants:
+    stockType: Stock
+    holderType: Holder
