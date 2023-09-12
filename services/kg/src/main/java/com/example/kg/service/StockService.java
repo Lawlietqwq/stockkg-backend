@@ -1,5 +1,6 @@
 package com.example.kg.service;
 
+import com.example.kg.dto.StockQueryDTO;
 import com.example.kg.vo.OptionVO;
 import com.example.kg.vo.StockOneHopVO;
 import com.example.kg.vo.StockVO;
@@ -8,9 +9,9 @@ import java.util.List;
 import java.util.Set;
 
 public interface StockService {
-    StockVO getStockVOByTsCode(String tsCode, int endDate);
+    StockVO getStockVOByTsCode(StockQueryDTO requestParam);
 
-    StockOneHopVO getOneHopStockVO(String tsCode, int endDate);
+    StockOneHopVO getOneHopStockVO(StockQueryDTO requestParam);
 
     int getFirstDate(String tsCode);
 

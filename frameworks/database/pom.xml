@@ -9,25 +9,43 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.stockkg</groupId>
-    <artifactId>database</artifactId>
+    <artifactId>stockkg-database</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>database</name>
-    <description>database</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
     <dependencies>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>com.stockkg</groupId>
+            <artifactId>stockkg-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+
+<!--        <dependency>-->
+<!--            <groupId>com.mysql</groupId>-->
+<!--            <artifactId>mysql-connector-j</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

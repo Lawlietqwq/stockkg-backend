@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  */
 public final class CacheUtil {
 
-    private static final String SPLICING_OPERATOR = "_";
+    private static final String _SPLICING_OPERATOR = "_";
 
     /**
      * 构建缓存标识
@@ -24,7 +24,7 @@ public final class CacheUtil {
      */
     public static String buildKey(String... keys) {
         Stream.of(keys).forEach(each -> Optional.ofNullable(Strings.emptyToNull(each)).orElseThrow(() -> new RuntimeException("构建缓存 key 不允许为空")));
-        return Joiner.on(SPLICING_OPERATOR).join(keys);
+        return Joiner.on(_SPLICING_OPERATOR).join(keys);
     }
 
     /**

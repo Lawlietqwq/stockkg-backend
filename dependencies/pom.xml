@@ -12,6 +12,7 @@
         <java.version>11</java.version>
         <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
         <jackson.version>2.13.3</jackson.version>
+        <dozer-core.version>6.5.2</dozer-core.version>
         <mybatis-spring-boot-starter.version>3.0.2</mybatis-spring-boot-starter.version>
         <shardingsphere.version>5.3.2</shardingsphere.version>
         <web.version>2.3.2.RELEASE</web.version>
@@ -61,6 +62,12 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.dozermapper</groupId>
+                <artifactId>dozer-core</artifactId>
+                <version>${dozer-core.version}</version>
             </dependency>
 
             <dependency>

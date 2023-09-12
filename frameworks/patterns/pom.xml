@@ -9,10 +9,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.stockkg</groupId>
-    <artifactId>patterns</artifactId>
+    <artifactId>stockkg-patterns</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>patterns</name>
-    <description>patterns</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -23,10 +22,11 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.stockkg</groupId>
+            <artifactId>stockkg-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
+
     </dependencies>
 
     <build>

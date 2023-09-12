@@ -1,7 +1,7 @@
 package com.example.kg.dao;
 
-import com.example.kg.entity.Holder;
-import com.example.kg.entity.Stock;
+import com.example.kg.entity.neo.Holder;
+import com.example.kg.entity.neo.Stock;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.stereotype.Repository;

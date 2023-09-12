@@ -1,4 +1,3 @@
-
 package com.example.cache.toolkit;
 
 import com.alibaba.fastjson2.util.ParameterizedTypeImpl;

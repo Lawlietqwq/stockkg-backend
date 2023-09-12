@@ -1,8 +1,8 @@
 package com.example.kg.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.example.kg.common.Result;
-import com.example.kg.common.ResultTypeEnum;
+import com.example.common.result.Result;
+import com.example.common.result.ResultTypeEnum;
 import com.example.kg.service.ModelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -21,6 +21,10 @@ public class ModelController {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
+    /**
+     * 申请参数获取更新
+     * @return
+     */
     @RequestMapping("/update")
     public Result<String> getModelService() {
         String date = redisTemplate.opsForValue().get("last_modified");
@@ -32,6 +36,10 @@ public class ModelController {
         return new Result<>(ResultTypeEnum.UPDATE_SUCCESS);
     }
 
+    /**
+     * 获得模型更新结果
+     * @return
+     */
     @RequestMapping("/result")
     public Result<Map<Object, Object>> getModelResult() {
         Map<Object,Object> data =  redisTemplate.opsForHash().entries("result");
