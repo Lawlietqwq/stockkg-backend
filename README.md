@@ -9,12 +9,12 @@
   * database: 数据库模版类 & 分布式id
   * patterns: 职责链模版，负责数据校验、缓存加载
   * web: 防重复提交（待修改） & 日志配置类
-* pyjobs: 部分python脚本，neo4j数据库建库以及tushare接口数据更新
+* pyjobs: 部分python脚本，neo4j数据库建库 & tushare接口数据更新
 * services: 应用程序
   * kg: 知识图谱系统
     * controller: 服务接口
-      * ModelController: 调用远程服务器执行深度学习代码
-      * HolderController: 股东节点相关操作
+      * ModelController: 调用远程服务器更新模型参数
+      * HolderController: 股东节点接口
       * StockController: 股票节点接口
     * service: service层
     * filters: 职责链
