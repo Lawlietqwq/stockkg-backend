@@ -25,7 +25,7 @@
 <!--       <dubbo:provider registry="zk1"  protocol="mydubbo" />-->
 
        <!-- 声明需要引用的服务接口 -->
-       <dubbo:reference interface="com.example.stockkg.service.ModelService" />
+       <dubbo:reference interface="com.example.kg.remote.ModelRemoteService" />
 
 <!--       <dubbo:reference interface="com.example.stockkg.service.ModelService" />-->
 

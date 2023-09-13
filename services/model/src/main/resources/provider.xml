@@ -6,10 +6,10 @@
     <!-- 指定当前服务、应用的名字， -->
     <dubbo:application name="demo-provider"/>
     <!-- 指定注册中心的位置 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://localhost:12600?backup=zookeeper://localhost:12500"/>
     <!-- 指定通信规则（通信协议？通信端口） -->
     <dubbo:protocol name="dubbo" port="20890"/>
-    <!-- 暴露服务 ref 指向服务真正的实现对象 -->
+    <!-- 暴露服务 ref 指向服务真正实现对象 -->
     <dubbo:service interface="com.example.model.remote.ModelRemoteService" ref="modelRemoteService"/>
     <!-- 服务实现 -->
     <bean id="modelRemoteService" class="com.example.model.remote.impl.ModelRemoteServiceImpl"/>
