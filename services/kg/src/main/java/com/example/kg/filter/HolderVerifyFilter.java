@@ -1,4 +1,4 @@
-package filter;
+package com.example.kg.filter;
 
 import com.example.kg.common.enums.VerifyChainEnum;
 import com.example.kg.dto.HolderQueryDTO;

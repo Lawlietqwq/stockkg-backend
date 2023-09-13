@@ -4,7 +4,7 @@ package com.example.database.idgenerator.snowflake;
 
 import cn.hutool.core.date.SystemClock;
 import lombok.extern.slf4j.Slf4j;
-import org.opengoofy.index12306.framework.starter.distributedid.toolkit.SnowflakeIdUtil;
+import com.example.database.idgenerator.tools.SnowflakeIdUtil;
 import org.springframework.beans.factory.annotation.Value;
 
 /**

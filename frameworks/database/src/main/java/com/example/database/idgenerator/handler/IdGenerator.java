@@ -1,6 +1,6 @@
 
 
-package com.example.database;
+package com.example.database.idgenerator.handler;
 
 /**
  * ID 生成器

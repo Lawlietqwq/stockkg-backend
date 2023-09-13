@@ -7,7 +7,7 @@ import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
-import org.opengoofy.index12306.framework.starter.distributedid.core.IdGenerator;
+import com.example.database.idgenerator.handler.IdGenerator;
 
 import java.io.Serializable;
 import java.util.Date;

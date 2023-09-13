@@ -4,7 +4,7 @@ package com.example.database.idgenerator.snowflake;
 
 import cn.hutool.core.collection.CollUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.opengoofy.index12306.framework.starter.bases.ApplicationContextHolder;
+import com.example.common.tools.ApplicationContextHolder;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.RedisTemplate;

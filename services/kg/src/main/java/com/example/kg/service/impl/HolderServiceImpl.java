@@ -1,23 +1,18 @@
 package com.example.kg.service.impl;
 
-import cn.hutool.json.JSONUtil;
 import com.example.cache.DistributedCache;
 import com.example.common.exception.CommonException;
-import com.example.common.tools.JsonUtil;
 import com.example.kg.common.enums.VerifyChainEnum;
 import com.example.kg.dao.HolderRepository;
 import com.example.kg.dao.RelationRepository;
 import com.example.kg.dto.HolderQueryDTO;
-import com.example.kg.dto.StockQueryDTO;
 import com.example.kg.entity.neo.Holder;
 import com.example.kg.entity.neo.Stock;
 import com.example.kg.service.HolderService;
 import com.example.kg.util.POJOUtil;
 import com.example.kg.vo.HolderVO;
 import com.example.patterns.chain.AbstractChainContext;
-import com.google.common.collect.Lists;
 import lombok.RequiredArgsConstructor;
-import org.neo4j.ogm.session.SessionFactory;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -25,7 +20,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 import static com.example.kg.common.constant.Constant.SPLICING_OPERATOR;
 import static com.example.kg.common.constant.RedisKeyConstant.*;

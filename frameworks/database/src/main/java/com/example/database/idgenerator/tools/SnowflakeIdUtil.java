@@ -2,8 +2,8 @@
 
 package com.example.database.idgenerator.tools;
 
-import org.opengoofy.index12306.framework.starter.distributedid.core.snowflake.Snowflake;
-import org.opengoofy.index12306.framework.starter.distributedid.core.snowflake.SnowflakeIdInfo;
+import com.example.database.idgenerator.snowflake.Snowflake;
+import com.example.database.idgenerator.snowflake.SnowflakeIdInfo;
 
 /**
  * 分布式雪花 ID 生成器

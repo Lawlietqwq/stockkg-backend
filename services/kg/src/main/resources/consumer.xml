@@ -24,8 +24,8 @@
 <!--       &lt;!&ndash; 指定是用zk,哪個 protocol&ndash;&gt;-->
 <!--       <dubbo:provider registry="zk1"  protocol="mydubbo" />-->
 
-<!--       &lt;!&ndash; 声明需要引用的服务接口 &ndash;&gt;-->
-<!--       <dubbo:reference interface="com.example.stockkg.service.ModelService" />-->
+       <!-- 声明需要引用的服务接口 -->
+       <dubbo:reference interface="com.example.stockkg.service.ModelService" />
 
 <!--       <dubbo:reference interface="com.example.stockkg.service.ModelService" />-->
 

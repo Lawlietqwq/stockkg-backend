@@ -24,7 +24,6 @@ import java.util.*;
 
 import static com.example.kg.common.constant.Constant.SPLICING_OPERATOR;
 import static com.example.kg.common.constant.RedisKeyConstant.*;
-import static com.example.kg.common.constant.RedisKeyConstant.QUERY_HOLDER;
 
 @Service
 @RequiredArgsConstructor

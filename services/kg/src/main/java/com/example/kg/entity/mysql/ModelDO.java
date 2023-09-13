@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.example.database.BaseDO;
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 @TableName("kg_model")
 public class ModelDO extends BaseDO {
@@ -20,4 +22,23 @@ public class ModelDO extends BaseDO {
      */
     private int serverId;
 
+    /**
+     * 模型id
+     */
+    private int modelId;
+
+    /**
+     * 行业
+     */
+    private String industry;
+
+    /**
+     * 排名
+     */
+    private int rank;
+
+    /**
+     * 交易日期
+     */
+    private Date tradingDate;
 }

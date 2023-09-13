@@ -1,0 +1,18 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+    <!-- 指定当前服务、应用的名字， -->
+    <dubbo:application name="demo-provider"/>
+    <!-- 指定注册中心的位置 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <!-- 指定通信规则（通信协议？通信端口） -->
+    <dubbo:protocol name="dubbo" port="20890"/>
+    <!-- 暴露服务 ref 指向服务真正的实现对象 -->
+    <dubbo:service interface="com.example.model.remote.ModelRemoteService" ref="modelRemoteService"/>
+    <!-- 服务实现 -->
+    <bean id="modelRemoteService" class="com.example.model.remote.impl.ModelRemoteServiceImpl"/>
+    <!-- 监控中心 -->
+    <dubbo:monitor protocol="registry"/>
+</beans>

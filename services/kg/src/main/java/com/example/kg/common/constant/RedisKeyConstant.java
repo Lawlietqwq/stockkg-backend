@@ -18,7 +18,12 @@ public final class RedisKeyConstant {
         public static final String QUERY_HOLDER = "kg:holder";
 
         /**
-         * 分布式锁 —— 查询二跳股票关联图
+         * 股票排名信息 Key Prefix + tradingDate
+         */
+        public static final String QUERY_MODEL = "kg:model:";
+
+        /**
+         * 查询二跳股票关联图
          */
         public static final String QUERY_STOCK_ONE_HOP = "kg:stock:stock_one_hop";
 
@@ -51,6 +56,11 @@ public final class RedisKeyConstant {
          * 分布式锁 —— 查询股东
          */
         public static final String QUERY_HOLDER_LOCK = "kg:lock:query_holder_lock";
+
+        /**
+         * 分布式锁 —— 查询模型结果
+         */
+        public static final String QUERY_MODEL_LOCK = "kg:lock:query_model";
 
         /**
          * 分布式锁 —— 查询股东与更新时间映射

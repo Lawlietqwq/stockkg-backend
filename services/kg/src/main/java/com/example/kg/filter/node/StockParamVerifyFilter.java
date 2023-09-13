@@ -1,9 +1,9 @@
-package filter.node;
+package com.example.kg.filter.node;
 
 import cn.hutool.core.util.StrUtil;
 import com.example.common.exception.CommonException;
 import com.example.kg.dto.StockQueryDTO;
-import filter.StockVerifyFilter;
+import com.example.kg.filter.StockVerifyFilter;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;

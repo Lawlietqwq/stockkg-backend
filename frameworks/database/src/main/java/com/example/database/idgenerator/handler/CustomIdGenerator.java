@@ -1,4 +1,4 @@
-package com.example.database.handler;
+package com.example.database.idgenerator.handler;
 
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import com.example.database.idgenerator.tools.SnowflakeIdUtil;

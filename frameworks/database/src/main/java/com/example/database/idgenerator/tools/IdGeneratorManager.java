@@ -2,10 +2,10 @@
 
 package com.example.database.idgenerator.tools;
 
+import com.example.database.idgenerator.handler.DefaultServiceIdGenerator;
+import com.example.database.idgenerator.handler.ServiceIdGenerator;
 import lombok.NonNull;
-import org.opengoofy.index12306.framework.starter.distributedid.core.IdGenerator;
-import org.opengoofy.index12306.framework.starter.distributedid.core.serviceid.DefaultServiceIdGenerator;
-import org.opengoofy.index12306.framework.starter.distributedid.core.serviceid.ServiceIdGenerator;
+import com.example.database.idgenerator.handler.IdGenerator;
 
 import java.util.Map;
 import java.util.Optional;
@@ -23,12 +23,6 @@ public final class IdGeneratorManager {
      */
     private static Map<String, IdGenerator> MANAGER = new ConcurrentHashMap<>();
 
-    /**
-     * 注册默认 ID 生成器
-     */
-    static {
-        MANAGER.put("default", new DefaultServiceIdGenerator());
-    }
 
     /**
      * 注册 ID 生成器
@@ -47,7 +41,7 @@ public final class IdGeneratorManager {
     public static ServiceIdGenerator getIdGenerator(@NonNull String resource) {
         return Optional.ofNullable(MANAGER.get(resource)).map(each -> (ServiceIdGenerator) each).orElse(null);
     }
-
+    
     /**
      * 获取默认 ID 生成器 {@link DefaultServiceIdGenerator}
      */
