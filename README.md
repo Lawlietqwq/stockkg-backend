@@ -24,5 +24,5 @@
     * mapper: MySQL数据库查询接口
     * remote: 远程接口
     * vo、dto、entity: 再封装
- * model: 远程服务器提供调用接口，提供参数更新服务
+  * model: 远程服务器提供调用接口，提供参数更新服务
 
