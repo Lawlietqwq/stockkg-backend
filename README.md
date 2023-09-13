@@ -3,7 +3,7 @@
 股权关系的知识图谱、股票板块排名推荐系统
 
 * dependencies: 依赖版本管理
-* framworks: 组件库
+* frameworks: 组件库
   * cache: Redis组件
   * common: 公共数据管理——工具类 & 异常类 & 异常处理切面 & 配置类 & 响应体 & 上下文等
   * database: 数据库模版类 & 分布式id
@@ -24,5 +24,5 @@
     * mapper: MySQL数据库查询接口
     * remote: 远程接口
     * vo、dto、entity: 再封装
-* model: 远程服务器提供调用接口，提供参数更新服务
+ * model: 远程服务器提供调用接口，提供参数更新服务
 
